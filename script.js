@@ -32,3 +32,4 @@ const movie2 = new movie(10, "Greaterererererer Grandson of the Mask", 2093, -5.
 const maskMovies = [
   movie1, movie2, movie3, movie4, movie5, movie6, movie7, movie8, movie9, movie10
 ];
+ 
