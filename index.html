@@ -4,11 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Graphical user interface</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Graphical user interface</h1>
-  <p>Warning: May contain graphical content</p>
+  <div class="container">
+
+    <div class="left-column">
+      <h1>Search Movies</h1>
+
+      <div class="input-row" id="searchIDInput">
+        <input type="number" id="sIDInput" placeholder="Movie ID">
+        <button id="myButton">Search by ID</button>
+      </div>
+
+      <div class="input-row" id="searchTitleInput">
+        <input type="text" id="sTitleInput" placeholder="Movie Title">
+        <button id="myButton">Search by Title</button>
+      </div>
+
+      <h1>Sort Movies</h1>
+      <div class="button-row">
+        <button>Sort A-Z</button>
+        <button>Sort Z-A</button>
+        <button>Best Movies</button>
+      </div>
+
+      <h1>Add Movie</h1>
+      <div class="add-input-row">
+        <input type="number" id="aIDInput" placeholder="ID">
+        <input type="text" id="aTitleInput" placeholder="Title">
+        <input type="text" id="aYearInput" placeholder="Year">
+        <input type="number" id="aRatingInput" placeholder="Rating">
+      </div>
+
+      <div class="add-button-row">
+        <button>Submit</button>
+      </div>
+    </div>
+
+    <div class="right-column">
+      <h1>Movie List</h1>
+      <ul>
+        <li>movie</li>
+        <li>movie2</li>
+      </ul>
+    </div>
+
+  </div>
 
   <script src="./script.js"></script>
 </body>
+
 </html>
