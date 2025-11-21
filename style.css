@@ -2,7 +2,6 @@
 
 * {
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -12,7 +11,7 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
-    border: black 1px solid;
+    border: black 2px solid;
 }
 
 .container {
@@ -42,14 +41,6 @@ body {
     border-bottom: 0;
 }
 
-header {
-    font-family: "Roboto Slab", serif;
-    font-size: x-large;
-    font-weight: bolder;
-    text-align: center;
-    border: black 1px solid;
-}
-
 h1 {
     background-color: #203065;
     color: #ffffff;
@@ -58,6 +49,19 @@ h1 {
     padding: 5px;
     padding-left: 10px;
     border-bottom: black 1px solid;
+}
+
+header {
+    font-family: "Roboto Slab", serif;
+    font-size: x-large;
+    font-weight: bolder;
+    text-align: center;
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
+}
+
+.container h1 {
+    font-family: "Roboto", sans-serif;
 }
 
 .input-row {
@@ -183,6 +187,7 @@ li {
     font-size: x-large;
     padding-left: 5px;
     color: white;
+    font-family: "Roboto", sans-serif;
 }
 
 li:nth-child(even) {
@@ -192,9 +197,10 @@ li:nth-child(even) {
 }
 
 footer {
-    font-family: "Roboto Mono", serif;
+    font-family: "Roboto Mono", monospace;
     text-align: center;
     color: white;
     background-color: #203065;
-    border: black 1px solid;
+    border-top: black 2px solid;
+    border-bottom: black 1px solid;
 }
