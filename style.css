@@ -183,16 +183,28 @@ button {
 li {
     display: flex;
     align-items: center;
-    flex: 1;
     font-size: x-large;
     padding-left: 5px;
     color: white;
     font-family: "Roboto", sans-serif;
-    max-height: 40px;
+    max-height: 65px;
 }
 
-li p {
-    flex: 1;
+.idLI {
+    width: 50px;
+}
+
+.titleLI {
+    flex: 2;
+    padding-right: 8px;
+}
+
+.yearLI {
+    width: 80px;
+}
+
+.ratingLI {
+    width: 80px;
 }
 
 li:nth-child(even) {
