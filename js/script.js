@@ -2,7 +2,7 @@
 // Desc: This file shows something i think
 // Author: Keegan Hughes
 // Date: 24/10/2025
-// Modified: 14/11/2025
+// Modified: 21/11/2025
 
 // Defines a movie class with the properties movieID, title, year, and rating
 class movie {
@@ -13,8 +13,6 @@ class movie {
     this.rating = rating;
   }
 }
-// Logs out the movie class
-console.log("The movie class is: " + movie);
 
 // Defines 10 unsorted movie objects
 const movie7 = new movie(1, "The Mask", 1994, 5.0);

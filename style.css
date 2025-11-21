@@ -188,11 +188,20 @@ li {
     padding-left: 5px;
     color: white;
     font-family: "Roboto", sans-serif;
+    max-height: 40px;
+}
+
+li p {
+    flex: 1;
 }
 
 li:nth-child(even) {
     background-color: #5A689A;
     border-top: black 1px solid;
+    border-bottom: black 1px solid;
+}
+
+li:last-child {
     border-bottom: black 1px solid;
 }
 
