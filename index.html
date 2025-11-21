@@ -7,52 +7,79 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <h1>Movie To-Watch List</h1>
+  </header>
+
   <div class="container">
 
     <div class="left-column">
-      <h1>Search Movies</h1>
 
-      <div class="input-row" id="searchIDInput">
-        <input type="number" id="sIDInput" placeholder="Movie ID">
-        <button id="myButton">Search by ID</button>
+      <div class="Section">
+        <h1>Search Movies</h1>
+
+        <div class="input-row">
+          <input type="number" id="sIDInput" placeholder="Movie ID">
+          <button id="searchByID">Search by ID</button>
+        </div>
+
+        <div class="input-row">
+          <input type="text" id="sTitleInput" placeholder="Movie Title">
+          <button id="searchByTitle">Search by Title</button>
+        </div>
       </div>
 
-      <div class="input-row" id="searchTitleInput">
-        <input type="text" id="sTitleInput" placeholder="Movie Title">
-        <button id="myButton">Search by Title</button>
+      <div class="Section">
+        <h1>Sort Movies</h1>
+        <div class="button-row">
+          <button id="sortAZ">Sort A-Z</button>
+          <button id="sortZA">Sort Z-A</button>
+          <button id="bestMovies">Best Movies</button>
+        </div>
       </div>
 
-      <h1>Sort Movies</h1>
-      <div class="button-row">
-        <button>Sort A-Z</button>
-        <button>Sort Z-A</button>
-        <button>Best Movies</button>
+      <div class="Section">
+        <h1>Add Movie</h1>
+
+        <div class="add-input-row">
+          <input type="number" id="aIDInput" placeholder="ID">
+          <input type="text" id="aTitleInput" placeholder="Title">
+          <input type="number" id="aYearInput" placeholder="Year">
+          <input type="number" id="aRatingInput" placeholder="Rating">
+        </div>
+
+        <div class="add-button-row">
+          <button id="addMovie">Submit</button>
+        </div>
       </div>
 
-      <h1>Add Movie</h1>
-      <div class="add-input-row">
-        <input type="number" id="aIDInput" placeholder="ID">
-        <input type="text" id="aTitleInput" placeholder="Title">
-        <input type="text" id="aYearInput" placeholder="Year">
-        <input type="number" id="aRatingInput" placeholder="Rating">
-      </div>
-
-      <div class="add-button-row">
-        <button>Submit</button>
-      </div>
     </div>
 
     <div class="right-column">
-      <h1>Movie List</h1>
-      <ul>
-        <li>movie</li>
-        <li>movie2</li>
-      </ul>
+      <div class="Section">
+        <div class="movie-header-row">
+          <h1>Movie List</h1>
+          <button class="refreshBtn" id="refreshList">Refresh List</button>
+        </div>
+
+        <ul class="movie-list">
+          <li>
+            <p class="idLI">ID</p>
+            <p class="titleLI">Title</p>
+            <p class="yearLI">Year</p>
+            <p class="ratingLI">Rating</p>
+          </li>
+        </ul>
+      </div>
     </div>
 
   </div>
 
-  <script src="./script.js"></script>
-</body>
+  <footer>
+    <p>NerdCO 2025 --- All Rights Revoked</p>
+  </footer>
 
+  <script src="js/movieobject.js"></script>
+  <script src="js/script.js"></script>
+</body>
 </html>
