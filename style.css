@@ -82,6 +82,12 @@ input {
     margin-bottom: 15px;
 }
 
+label {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    margin: 0px 5px;
+}
+
 input::placeholder {
     color: white;
     font-weight: 300;

@@ -41,11 +41,26 @@
       <div class="Section">
         <h1>Add Movie</h1>
 
-        <div class="add-input-row">
-          <input type="number" id="aIDInput" placeholder="ID">
-          <input type="text" id="aTitleInput" placeholder="Title">
-          <input type="number" id="aYearInput" placeholder="Year">
-          <input type="number" id="aRatingInput" placeholder="Rating">
+        <div class="add-movie-grid">
+          <div>
+            <label for="aIDInput">Movie ID:</label>
+            <input type="number" id="aIDInput" placeholder="ID">
+          </div>
+
+          <div>
+            <label for="aTitleInput">Movie Title:</label>
+            <input type="text" id="aTitleInput" placeholder="Title">
+          </div>
+
+          <div>
+            <label for="aYearInput">Release Year:</label>
+            <input type="number" id="aYearInput" placeholder="Year">
+          </div>
+
+          <div>
+            <label for="aRatingInput">Rating (0-5):</label>
+            <input type="number" id="aRatingInput" placeholder="Rating" min="0" max="5">
+          </div>
         </div>
 
         <div class="add-button-row">
